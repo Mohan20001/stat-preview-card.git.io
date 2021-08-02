@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin: 40px 0px;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+body {
+  font-size: 15px;
+  font-family: 'inter',sans-serif;
+  background: #090b1a;
+  color: white;
+}
+
+.container {
+  position: absolute;
+  display: -ms-grid;
+  display: grid;
+  width: 300px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  background: #1b1938;
+  border-radius: 5px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+@media (min-width: 790px) {
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    width: auto;
+    margin-left: auto;
+    grid-auto-rows: auto;
+    grid-auto-columns: auto;
+  }
+}
+
+picture {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.img-container {
+  position: relative;
+}
+
+.img-container::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(170, 92, 219, 0.5)));
+  background: linear-gradient(rgba(170, 92, 219, 0.5));
+}
+
+picture img {
+  width: 100%;
+  height: 100%;
+}
+
+.text-container {
+  padding: 20px 14px;
+  text-align: center;
+  color: white;
+}
+
+@media (min-width: 790px) {
+  .text-container {
+    text-align: left;
+    padding: 60px;
+  }
+}
+
+.text-container h1 span {
+  color: rgba(170, 92, 219, 0.5);
+}
+
+.text-container > p {
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+.reviews p {
+  margin: 20px;
+}
+
+@media (min-width: 790px) {
+  .reviews p {
+    display: inline-block;
+    margin: auto;
+    margin-right: 20px;
+  }
+}
+
+.reviews p span {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'legend',deca;
+}
+/*# sourceMappingURL=style.css.map */
